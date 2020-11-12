@@ -53,4 +53,9 @@ matrixTest <- function(){
   newMatrix$get()
   newMatrix$getInverse()
   cacheSolve(newMatrix)
+  
+  newMatrix <- makeCacheMatrix(matrix(4:8, 2, 2))
+  newMatrix$get()
+  newMatrix$getInverse()
+  cacheSolve(newMatrix)
 }
